@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+<a-scene >
+
+
+<a-obj-model src="assets/flower.obj" material="src: assets/bg.jpg" scale="0.002 0.002 0.002" rotation="60 120 0" position="3.2 2.3 -5.5"
+animation="property: rotation; to: 0 360 0; dur: 25000; easing: linear; loop: true; dir: alternate" obj-model=""></a-obj-model>
+
+<a-obj-model src="assets/flower.obj" material="src: assets/bg.jpg" obj-model="" position="-2.2 2 -3.5" rotation="56 57 18" scale="0.004 0.004 0.004"></a-obj-model>
+
+<a-entity geometry="primitive: sphere; radius: 0.8" material="src: assets/1.jpg"  rotation="0 0 0" position="0.2 2.3 -5.5"
+animation="property: rotation; to: 0 360 360; dur: 9000; easing: linear; loop: true; dir: alternate" obj-model=""></a-entity>
+
+<a-assets>
+   <a-asset-item id="1-gltf" src="assets/1.glb"  ></a-asset-item>
+    <img id="sky" src="bg.jpg">
+ </a-assets>
+   <a-sky color="black"></a-sky>
+  <a-entity id="1" gltf-model="#1-gltf" position="-0.2 1 -2.8" scale="2 2 2"
+  animation="property: rotation; to: 0 360 0; dur: 25000; easing: linear; loop: true; dir: alternate">
+</a-entity>
+
+<a-entity light="type: ambient; color: #fdfcff"></a-entity>
+</a-scene>

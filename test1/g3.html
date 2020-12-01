@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/g3.css">
+<style>
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  a {
+    text-decoration: none;
+  }
+
+
+  #dogs {
+    display: grid;
+  grid-template-columns: 0.8fr 0.3fr 0.6fr 0.21fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  top: 200px;
+  }
+
+  #dogs > img {
+    width: 100%;
+  }
+
+  #dogs > div {
+    width: 100%;
+    height: calc(33vw - 90px);
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (max-width: 600px) {
+    nav > img, nav > div {
+      display: none;
+    }
+  }
+
+  @media (min-width: 600px) {
+    #dogs > div {
+      height: calc(600px / 3 - 30px);
+    }
+  }
+
+  @media (max-width: 500px) {
+    #dogs {
+      grid-template-columns: 1fr;
+    }
+
+    #dogs > div {
+      height: 80vw;
+    }
+  }
+
+</style>
+
+
+
+
+<section id="dogs">
+  <div style="background-image:url('assets/leaf1.jpg');" ></div>
+ <div style="background-image:url('assets/leaf2.jpg');" ></div>
+ <div style="background-image:url('assets/leaf3.jpg');" ></div>
+<div style="background-image:url('assets/leaf4.png');" ></div>
+
+
+
+
+
+</section>
+
+<div class="l1">
+
+<img src="assets/ll1.png"  class="l1" height="20px">
+
+</div>
+
+
+<!-- <div class="l2">
+
+<img src="assets/ll2.png"  class="l2" height="20px">
+
+</div> -->
+
+
+<!-- <div class="l3">
+
+<img src="assets/ll3.png"  class="l3" height="20px">
+
+</div> -->
+
+<div class="container2">
+
+<img src="assets/ll2.png" alt="Avatar" class="l2">
+<div class="overlay2">
+  <div class="layer2"><img src="assets/p2.png" class="image3"></div>
+</div>
+
+</div>
+
+
+<div class="container1">
+
+<img src="assets/ll3.png" alt="Avatar" class="l3">
+<div class="overlay1">
+  <div class="layer1"><img src="assets/p1.png" class="image4"></div>
+</div>
+
+</div>
+<!-- include the Glitch button to show what the webpage is about and
+      to make it easier for folks to view source and remix -->
